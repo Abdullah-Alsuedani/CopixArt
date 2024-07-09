@@ -154,3 +154,11 @@ a{
     border-radius: 10px;
     color: white;
 }
+
+.hero-img{
+    text-align: center;
+}
+
+.hero-img video{
+    max-width: 400px;
+}
