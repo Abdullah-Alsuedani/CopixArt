@@ -1,0 +1,156 @@
+:root{
+    --main-color: #651CEE;
+    --secondary-color: #030314;
+    --main-padding: 60px;
+    --section-color: #F8F8FF;
+    --paragraph-color: #777;
+}
+
+/* Start Global Rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+body{
+    font-family: 'cairo', sans-serif;
+    background-color: #090915;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+.header{
+    padding: 20px 0;
+}
+.header .logo img{
+    width: 200px;
+}
+@media (max-width: 767px) {
+    .header .logo img{
+        width: 150px;
+    }
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav{
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+    align-items: center;
+}
+.header .nav li:not(:last-child) a{
+    color: var(--paragraph-color);
+}
+.header .nav li:last-child a{
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .header .nav{
+        display: none;
+    }
+}
+.header .bar{
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .header .bar{
+        display: flex;
+    }
+}
+.header .bar span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--main-color);
+
+}
+
+.hero{
+    height: 100vh;
+}
+
+.hero h1{
+    font-size: 50px;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .hero h1{
+        font-size: 30px;
+    }
+}
+.hero p{
+    color: var(--paragraph-color);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero div.but{
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div a:last-child{
+    margin-right: 30px;
+    border: 2px solid var(--main-color);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: var(--main-color);
+}
+
+.hero div a:first-child{
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+}
