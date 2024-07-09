@@ -157,8 +157,11 @@ a{
 
 .hero-img{
     text-align: center;
+    width: 350px;
+    max-width: 350px;
 }
 
 .hero-img img{
     width: 350px;
+    max-width: 350px;
 }
