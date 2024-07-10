@@ -42,9 +42,7 @@ function mainAnim(el, d){
     el.style.opacity = 1
 }
 
-window.addEventListener('load', () => {
-    mainAnim(mainTitle, 'X')
-    mainAnim(mainP, 'X')
-    mainAnim(mainbtns, 'Y')
-    mainAnim(mainImage, 'Y')
-})
+mainAnim(mainTitle, 'X')
+mainAnim(mainP, 'X')
+mainAnim(mainbtns, 'Y')
+mainAnim(mainImage, 'Y')
