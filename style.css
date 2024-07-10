@@ -127,6 +127,7 @@ a{
 
 .hero{
     height: 100vh;
+    overflow: hidden;
 }
 
 .hero h1{

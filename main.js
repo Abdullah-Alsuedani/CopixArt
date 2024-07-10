@@ -19,7 +19,6 @@ let titleArr = []
 for(let i=1; i< titleText.length+1; i++){
     titleArr.push(`<span>${titleText.slice(i-1, i)}</span>`)
     mainTitle.innerHTML += titleArr[i-1]
-    console.log(titleArr[i-1])
 }
 
 setTimeout(()=>{
