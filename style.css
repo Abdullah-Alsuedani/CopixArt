@@ -64,6 +64,10 @@ a{
     border-radius: 50%;
     filter: blur(10px);
 }
+
+::selection{
+    display: none;
+}
 /* End Global Rules */
 
 .header{
