@@ -8,8 +8,8 @@ let mainbtns = document.querySelector('.hero .but')
 let mainImage = document.querySelector('.hero-img img')
 
 document.addEventListener("mousemove", (e)=>{
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
 })
 
 let titleText = 'جميع الخدمات التي تحتاجها لبناء براند أو بزنس ناجح في مكان واحد'
