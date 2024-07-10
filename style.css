@@ -12,6 +12,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    cursor: none;
 }
 html{
     scroll-behavior: smooth;
@@ -50,6 +51,18 @@ a{
     .container{
         width: 1170px;
     }
+}
+
+.cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-color);
+    opacity: 0.8;
+    border-radius: 50%;
+    filter: blur(10px);
 }
 /* End Global Rules */
 
@@ -120,6 +133,9 @@ a{
     color: white;
     text-align: center;
 }
+.hero h1 span{
+    transition: 0.3s all;
+}
 @media (max-width: 767px) {
     .hero h1{
         font-size: 30px;
@@ -159,6 +175,7 @@ a{
     text-align: center;
     width: 350px;
     max-width: 350px;
+    margin: auto;
 }
 
 .hero-img img{
