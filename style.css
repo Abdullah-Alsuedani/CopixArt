@@ -176,9 +176,20 @@ a{
     width: 350px;
     max-width: 350px;
     margin: auto;
+    animation: fly 5s infinite linear;
 }
 
 .hero-img img{
     width: 350px;
     max-width: 350px;
+}
+
+@keyframes fly {
+    0%{
+        transform: translateY(0);
+    }50%{
+        transform: translateY(30px);
+    }100%{
+        transform: translateY(0);
+    }
 }
