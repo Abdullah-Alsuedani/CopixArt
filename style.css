@@ -136,6 +136,9 @@ a{
     line-height: 1.5;
     color: white;
     text-align: center;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: 0.5s all;
 }
 .hero h1 span{
     transition: 0.3s all;
@@ -150,6 +153,9 @@ a{
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: 0.5s all;
 }
 
 .hero div.but{
@@ -158,6 +164,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s all;
 }
 
 .hero div a:last-child{
@@ -186,6 +195,9 @@ a{
 .hero-img img{
     width: 350px;
     max-width: 350px;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 0.5s all;
 }
 
 @keyframes fly {
