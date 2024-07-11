@@ -69,6 +69,11 @@ a{
 
 .blurBG{
     position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-color);
+    filter: blur(200px);
+    border-radius: 50%;
     z-index: -1000;
 }
 /* End Global Rules */
@@ -223,6 +228,8 @@ a{
     text-align: center;
     margin: auto;
     animation: fly 5s infinite linear;
+    position: relative;
+    left: -100px;
 }
 
 .hero-img img{
@@ -231,7 +238,6 @@ a{
     transform: translateY(-100px);
     opacity: 0;
     transition: 0.5s all;
-    transform: translateX(-120px);
 }
 @media (max-width: 767px) {
     .hero img{
