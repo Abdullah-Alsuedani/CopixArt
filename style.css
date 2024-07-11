@@ -247,7 +247,8 @@ a{
 }
 @media (max-width: 1200px) {
     .hero-img{
-        transform: translateX(0);
+        position: relative;
+        left: 0;
     }
 }
 @keyframes fly {
