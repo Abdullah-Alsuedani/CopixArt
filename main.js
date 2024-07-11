@@ -8,8 +8,12 @@ let mainbtns = document.querySelector('.hero .but')
 let mainImage = document.querySelector('.hero-img img')
 
 document.addEventListener("mousemove", (e)=>{
+    cursor.style.opacity = 1
     cursor.style.left = `${e.pageX}px`;
     cursor.style.top = `${e.pageY}px`;
+})
+document.addEventListener('mouseleave', ()=>{
+    cursor.style.opacity = 0
 })
 
 let titleText = 'جميع الخدمات التي تحتاجها لبناء براند أو بزنس ناجح في مكان واحد'
@@ -42,7 +46,10 @@ function mainAnim(el, d){
     el.style.opacity = 1
 }
 
-mainAnim(mainTitle, 'X')
-mainAnim(mainP, 'X')
-mainAnim(mainbtns, 'Y')
-mainAnim(mainImage, 'Y')
+setTimeout(()=>{
+    mainAnim(mainTitle, 'X')
+    mainAnim(mainP, 'X')
+    mainAnim(mainbtns, 'Y')
+    mainAnim(mainImage, 'Y')
+}, 1)
+
