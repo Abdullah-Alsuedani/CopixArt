@@ -130,19 +130,42 @@ a{
 
 .hero{
     height: 100vh;
+    width: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: center;
 }
-
+.hero .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+@media (max-width: 1200px) {
+    .hero .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .hero h1{
     font-size: 50px;
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 600px;
     line-height: 1.5;
     color: white;
-    text-align: center;
     transform: translateX(-300px);
     opacity: 0;
     transition: 0.5s all;
+}
+@media (max-width: 1200px) {
+    .hero h1{
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+    }
 }
 .hero h1 span{
     transition: 0.3s all;
@@ -154,23 +177,31 @@ a{
 }
 .hero p{
     color: var(--paragraph-color);
-    text-align: center;
     max-width: 600px;
-    margin: 0 auto;
     transform: translateX(300px);
     opacity: 0;
     transition: 0.5s all;
 }
-
+@media (max-width: 1200px) {
+    .hero p{
+        margin: 30px auto;
+        text-align: center;
+    }
+}
 .hero div.but{
     max-width: 500px;
-    margin: 30px auto;
+    margin-top: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
     transform: translateY(100px);
     opacity: 0;
     transition: 0.5s all;
+}
+@media (max-width: 1200px) {
+    .hero .but{
+        margin: 30px auto;
+        justify-content: center;
+    }
 }
 
 .hero div a:last-child{
@@ -190,20 +221,29 @@ a{
 
 .hero-img{
     text-align: center;
-    width: 350px;
-    max-width: 350px;
     margin: auto;
     animation: fly 5s infinite linear;
 }
 
 .hero-img img{
-    width: 350px;
-    max-width: 350px;
+    width: 500px;
+    max-width: 500px;
     transform: translateY(-100px);
     opacity: 0;
     transition: 0.5s all;
+    transform: translateX(-120px);
 }
-
+@media (max-width: 767px) {
+    .hero img{
+        width: 350px;
+        max-width: 350px;
+    }
+}
+@media (max-width: 1200px) {
+    .hero-img{
+        transform: translateX(0);
+    }
+}
 @keyframes fly {
     0%{
         transform: translateY(0);
